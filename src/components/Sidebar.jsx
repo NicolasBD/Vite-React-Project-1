@@ -37,7 +37,7 @@ function Sidebar() { // Changed the component name to Sidebar
         <nav class="navbar-social-networks">
           <ul>
             <li>
-              <a href=""><Facebook color="#ffffff" strokeWidth={1} /></a>
+              <a href=""><Facebook color="#ffffff" strokeWidth={1}/></a>
               
             </li>
             <li>
