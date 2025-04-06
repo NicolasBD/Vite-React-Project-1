@@ -1,0 +1,95 @@
+/* Sidebar.css */
+
+  .sidebar {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #333; /* Dark background for the sidebar */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-image-container {
+    width: 180px; /* Adjust the size as needed */
+    height: 180px;
+    border-radius: 50%; /* Make it round */
+    overflow: hidden; /* Hide the parts of the image that go outside the circle */
+    margin-bottom: 20px;
+    border: solid 10px #3b3939;
+    border-radius: 50rem;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav li {
+    margin: 30px;
+  }
+  
+  .sidebar-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Take up the remaining space */
+    padding: 20px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 10%;
+    align-content: center;
+  }
+  
+  footer .navbar-social-networks {
+    width: 100%;
+  }
+  .navbar-social-networks > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+  }
+  
+  .navbar-social-networks ul li {
+    list-style: none;
+  }
+
+  /* Responsive Design (for smaller screens) */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      z-index: 10;
+    }
+    .profile-image-container {
+      display: none;
+    }
+    .main-content {
+      margin-bottom: 100px;
+    }
+  }
