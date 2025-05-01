@@ -1,4 +1,3 @@
-import React from 'react'
 import './Sidebar.css'
 import profileimage from '../assets/profileimage.jpeg';
 import { Facebook } from 'lucide-react';
@@ -7,12 +6,12 @@ import { Linkedin } from 'lucide-react';
 
 
 
-function Sidebar() { // Changed the component name to Sidebar
+function Sidebar() {
     return (
       <aside className="sidebar">
         <div className="profile-image-container">
           <img
-            src={profileimage} // Replace with your profile image path
+            src={profileimage}
             alt="Profile"
             className="profile-image"
           />
@@ -34,7 +33,7 @@ function Sidebar() { // Changed the component name to Sidebar
           </ul>
         </nav>
         <footer>
-        <nav class="navbar-social-networks">
+        <nav className="navbar-social-networks">
           <ul>
             <li>
               <a href=""><Facebook color="#ffffff" strokeWidth={1}/></a>

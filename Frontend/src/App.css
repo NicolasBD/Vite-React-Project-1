@@ -1,5 +1,19 @@
-.app-container {
+.appContainer {
+  width: 100%;
+  height: 100%;
   display: flex;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
 }
+
+div > .sidebarContainer {
+  width: 15%;
+  height: 100%;
+}
+
+div > .mainContent {
+  width: 85%;
+  height: 100%;
+}
+
 
